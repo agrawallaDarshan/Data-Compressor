@@ -12,5 +12,5 @@ The program can compress text file consisting of 128 ASCII characters.
 It accepts all the uppercase and lowercase alphabets, numbers and special characters and convert them into their ASCII code and then to their corresponding binary values.
 
 ### This is my ALGORITHM DESIGN - 1 Project
-Name - Darshan Agrawalla
-Regd no. - 1941012792 
+#### Name - Darshan Agrawalla
+#### Regd no. - 1941012792 
