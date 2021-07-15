@@ -1,0 +1,91 @@
+/* #mainBody::before{
+    content: "";
+    position: absolute;
+    background: url('./img/marius-niveri-rfg4l6_lu3c-unsplash.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+} */
+
+#mainBody{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);;
+}
+
+#floatingTextarea, #decoded, #encoded{
+    border: 2px solid black;
+    min-height: 15rem;
+    overflow-y: scroll;
+    overflow-x: auto;
+    font-family: 'Noto Sans JP', 'sans-serif';
+    font-size: 1.5rem;
+    background-color: rgb(78, 76, 76);
+    color: white;
+}
+
+table, th, td{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+}
+
+.tableStyle{
+    color:black;
+    font-size: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#btnContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#compress{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#reset{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1.5rem;
+
+}
+
+label{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+#sizeContainer{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+
+#before, #after{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 4px solid white;
+    height: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body id="mainBody">
+    <!-- As a heading -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Data Compress</span>
+            </div>
+        </nav>
+
+        <h1 class="my-3" style="text-align: center; color: white; font-family: 'Balsamiq Sans', cursive;">Data Compressor</h1>
+    </header>
+
+    <section>
+        <div class="form-floating mx-5 my-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Enter your Data: </label>
+        </div>
+
+        <div id="btnContainer">
+            <button class="mx-2" id="compress">Compress</button>
+            <button class="mx-2" id="reset"><i class="fas fa-sync"></i></button>
+        </div>
+
+
+        <div id="container" class="mx-5 my-5">
+            <div class="form-floating mx-3 my-3">
+                <textarea class="form-control" id="encoded"></textarea>
+                <label for="encoded">Original Data : </label>
+            </div>
+
+            <table class="table table-light table-striped tableStyle" id="charTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Character</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Char-code</th>
+                        <th scope="col">Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-sort-alpha-down"></i></th>
+                        <td><i class="fas fa-sort-numeric-down"></i></td>
+                        <td><i class="fas fa-project-diagram"></i></td>
+                        <td><i class="fas fa-sort-numeric-down"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-floating mx-3 my-3">
+                <textarea class="form-control" id="decoded"></textarea>
+                <label for="encoded">Compressed Data : </label>
+            </div>
+
+            <table class="table table-light table-striped my-2 tableStyle" id="encodedCharTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Character</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Char-code</th>
+                        <th scope="col">Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><i class="fas fa-sort-alpha-down"></i></th>
+                        <td><i class="fas fa-sort-numeric-down"></i></td>
+                        <td><i class="fas fa-project-diagram"></i></td>
+                        <td><i class="fas fa-sort-numeric-down"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="sizeContainer">
+            <div id="before" style="color: #0D5BE1;">
+            </div>
+            <div id="after" style="color: #3ED625">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<!-- <script src="script.js"></script> -->
+<script src="priorityqueue.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>
